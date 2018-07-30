@@ -1,0 +1,361 @@
+body {
+  background: #fbf7f5;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.full-width {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+/***** TEXT STYLES *****/
+
+h1 {
+  font-family: "Trirong", serif;
+}
+
+@media screen and (min-width: 601px) {
+  div.navbar-full {
+    font-size: 20px;
+  }
+  h3 {
+    margin-bottom: -10px;
+    margin-top: 40px;
+    font-size: 2vw;
+  }
+  p {
+    font-size: 1.25vw;
+  }
+  div.full-width-text {
+    margin: 0px 75px 50px 75px;
+  }
+  div.navbar-full {
+    margin: 0px 10px 20px 50px;
+  }
+  div.full-width {
+    margin: 0px 75px 0px 75px;
+  }
+  div.square-box {
+    height: 20vw;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.navbar-full {
+    font-size: 12px;
+  }
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px
+    font-size: 9px;
+  }
+  p {
+    font-size: 7px;
+  }
+  div.full-width {
+    margin: 0px 20px 0px 20px;
+  }
+  div.full-width-text {
+    margin: 0px 20px 30px 20px;
+  }
+  div.navbar-full {
+    margin: 0px 10px 10px 20px;
+  }
+  div.square-box {
+    height: 30vw;
+    width: 30vw;
+  }
+  .modal-content {
+        width: 100%;
+    }
+}
+
+h3 {
+  font-family: "Trirong", serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-family: "Rubik", serif;
+  line-height: 1.75;
+}
+
+/***** IMAGE STYLES *****/
+
+.square-box {
+  margin: 10px;
+  position: relative;
+}
+
+.square-box:hover .image {
+  opacity: 0.3;
+}
+
+.square-box:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.text {
+  color: black;
+  font-size: 1vw;
+  line-height: 1.75;
+}
+
+/***** MODAL STUFF *****/
+
+.image {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image:hover {opacity: 0.7;}
+
+/* #img-one {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#img-one:hover {opacity: 0.7;} */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    /* width: 80%; */
+    max-width: 500px;
+    overflow: auto;
+}
+
+/* Add Animation */
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-02 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-02:hover,
+.close-02:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-06 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-06:hover,
+.close-06:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-07 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-07:hover,
+.close-07:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-03 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-03:hover,
+.close-03:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-04 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-04:hover,
+.close-04:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-05 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-05:hover,
+.close-05:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-08 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-08:hover,
+.close-08:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-09 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-09:hover,
+.close-09:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-10 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-10:hover,
+.close-10:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
