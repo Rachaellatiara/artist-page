@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title as seen on browser -->
-        <title>Rachaelle Ceniceros | Visual Artist</title>
+        <title>Rachaelle C.E. | Visual Artist</title>
 
         <!-- Defines character set -->
         <meta charset ="utf-8"/>
@@ -19,7 +19,7 @@
       <!-- Top of website with navigation and hello -->
       <header>
         <div class="navbar-full">
-          <h1>Rachaelle Ceniceros | Visual Artist</h1>
+          <h1>Rachaelle C.E. | Visual Artist</h1>
         </div>
       </header>
 
@@ -71,7 +71,7 @@
             </script>
 
             <div class="square-box">
-              <img id="img-two" src="img/img-02.jpg" class="image">
+              <img id="img-two" src="img/img-021.jpg" class="image">
               <div class="middle">
                 <div class="text">Lips<br>Oil on canvas<br>2018</div>
               </div>
@@ -139,7 +139,7 @@
             </script>
 
             <div class="square-box">
-              <img id="img-seven" src="img/img-07.jpg" class="image">
+              <img id="img-seven" src="img/img-071.jpg" class="image">
               <div class="middle">
                 <div class="text">Eye 02<br>Oil on canvas <br>2018</div>
               </div>
@@ -199,6 +199,74 @@
 
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close-04")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+
+            <div class="square-box">
+              <img id="img-thirteen" src="img/img-13.jpg" class="image">
+              <div class="middle">
+                <div class="text">Bloops<br>Ink on paper<br> 2017</div>
+              </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal-13" class="modal">
+              <span class="close-13">&times;</span>
+              <img class="modal-content" id="img13">
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal-13');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('img-thirteen');
+            var modalImg = document.getElementById("img13");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close-13")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+
+            <div class="square-box">
+              <img id="img-fourteen" src="img/img-14.jpg" class="image">
+              <div class="middle">
+                <div class="text">Sand Dunes<br>Ink on paper<br> 2017</div>
+              </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal-14" class="modal">
+              <span class="close-14">&times;</span>
+              <img class="modal-content" id="img14">
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal-14');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('img-fourteen');
+            var modalImg = document.getElementById("img14");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close-14")[0];
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
@@ -384,7 +452,7 @@
         <section id="bio">
           <div class="full-width-text">
             <h3>Bio</h3>
-            <p>Rachaelle Ceniceros is a contemporary artist specializing in oil paint portraiture. She attended the University of New Mexico for a Bachelor of Fine Arts degree in 2016 with a focus on painting. Her work incorporates high detail in the realism of portraiture, as well as abstract line work. Ceniceros uses soft value transitions and bold hues in order to offer the viewer an emotionally delicate yet powerful viewing experience. Ceniceros was born in Albuquerque, New Mexico where she currently resides, and considers herself a citizen of the World.</p>
+            <p>Rachaelle C.E. is a contemporary artist specializing in oil paint portraiture. She attended the University of New Mexico for a Bachelor of Fine Arts degree in 2016 with a focus on painting. Her work includes both realism as well as abstract lines, with a high level of detail in every piece. C.E. uses soft value transitions and bold hues in order to offer the viewer an emotionally delicate, yet powerful viewing experience. C.E. was born in Albuquerque, New Mexico where she currently resides, and considers herself a citizen of the World.</p>
           </div>
         </section>
 

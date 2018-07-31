@@ -359,3 +359,37 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
+
+.close-13 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-13:hover,
+.close-13:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-14 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-14:hover,
+.close-14:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
