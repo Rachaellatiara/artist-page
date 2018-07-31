@@ -46,6 +46,9 @@ h1 {
     height: 20vw;
     width: 20vw;
   }
+  img.img-logo {
+    margin-left: -8px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -76,6 +79,9 @@ h1 {
   .modal-content {
         width: 100%;
     }
+  img.img-logo {
+    margin-left: -3px;
+  }
 }
 
 h3 {
@@ -392,4 +398,20 @@ p {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/***** CONTACT *****/
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #975063;
+}
+
+img.img-logo {
+  width: 4vw;
+  height: 4vw;
 }
